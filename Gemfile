@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
-gem 'sucker_punch', '~> 2.0'
 gem 'foreman', require: false
 gem 'puma', require: false
 
@@ -14,4 +13,5 @@ end
 
 group :test do
   gem 'simplecov'
+  gem 'rack-test'
 end

@@ -36,7 +36,7 @@ guard :rspec, cmd: "bundle exec rspec" do
   watch(rspec.spec_support) { rspec.spec_dir }
   watch(rspec.spec_files)
 
-  watch(%r{^app/(.+)\.rb$})           { |m| "spec/#{m[1]}_spec.rb" }
+  watch(%r{^app/soul_owner/(.+)\.rb$})           { |m| "spec/#{m[1]}_spec.rb" }
   watch(%r{^app/soul_owner\.rb$})     { |m| "spec" }
 
 end

@@ -1,7 +1,5 @@
-# Base class for common async job functionality
+# Base class for common job functionality
 class SoulOwner::BaseJob
-  include SuckerPunch::Job
-
   private
 
     def logger

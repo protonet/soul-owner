@@ -1,3 +1,3 @@
 require './config/environment'
 
-run SoulOwner::Application
+run SoulOwner::Api

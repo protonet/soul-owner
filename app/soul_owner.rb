@@ -2,6 +2,9 @@ require 'logger'
 require 'fileutils'
 
 module SoulOwner
+  FILE_PERMISSIONS = 0660
+  DIR_PERMISSIONS  = 0770
+
   class << self
     def file_utils
       @file_utils ||= FileUtils
@@ -26,5 +29,6 @@ module SoulOwner
 
   autoload :BaseJob, "jobs/base_job"
   autoload :SetFilePermissionsAfterUpload, "jobs/set_file_permissions_after_upload"
-  autoload :SetRecursiveFilePermissionsJob, "jobs/set_recursive_file_permissions"
+  autoload :SetRecursiveFilePermissions, "jobs/set_recursive_file_permissions"
+  autoload :Api, "api"
 end
