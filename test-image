@@ -3,4 +3,4 @@
 IMAGE_NAME="$1"
 set -e
 
-docker run -it --rm --entrypoint="rspec" $IMAGE_NAME
+docker run -i --rm --entrypoint="rspec" $IMAGE_NAME
